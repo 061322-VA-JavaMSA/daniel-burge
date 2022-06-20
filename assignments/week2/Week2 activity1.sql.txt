@@ -1,0 +1,21 @@
+drop table if exists Employee;
+create table Employee(
+employee id integer,
+employee name varchar(30),
+employee dob varchar(30),
+employee age varchar(30),
+)
+create table Work location(
+employee Id int;
+customer ID int;
+street varchar(30);
+city varchar(30);
+state varchar(30);
+zip varchar(30);
+)
+create table Customer(
+customer id int;
+customer name varchar(30);
+customer dob varchar(30);
+customer age varchar(30);
+)
