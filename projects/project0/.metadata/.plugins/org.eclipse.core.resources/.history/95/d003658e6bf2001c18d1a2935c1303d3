@@ -1,0 +1,10 @@
+package com.revature.services;
+
+public class TaskService {
+private TaskDAO td = new TaskPostgres();
+	
+	public List<Task> getTasksByUserId(int id){
+		//
+		return td.retrieveTasksByUserId(id);
+
+}
