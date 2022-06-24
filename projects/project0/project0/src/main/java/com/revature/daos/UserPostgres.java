@@ -62,7 +62,7 @@ public class UserPostgres implements UserDAO{
 
 	@Override
 	public List<User> retrieveUsers() {
-		String sql = "select * from users;";
+		String sql = "select * from users; ";
 		List<User> users = new ArrayList<>();
 		
 		try(Connection c = ConnectionUse.getConnectionFromEnv()){
@@ -71,7 +71,7 @@ public class UserPostgres implements UserDAO{
 			ResultSet rs = s.executeQuery(sql);
 			
 			while(rs.next()) {
-				// extract each field from rs for each record, map them to a User object and add them to the users arrayliost
+				// extract each field from rs for each record, map them to a User object and add them to the users arraylist
 				User u = new User();
 				u.setId(rs.getInt("id"));
 				u.setUsername(rs.getString("username"));
