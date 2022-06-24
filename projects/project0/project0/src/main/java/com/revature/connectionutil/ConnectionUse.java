@@ -8,16 +8,6 @@ import java.util.Properties;
 
 public class ConnectionUse{
 
-	/*
-	 * Singleton
-	 * 	- Design pattern that ensures that there is only one instance of a class
-	 * 		- useful for heavier resources
-	 * 	- enforced via multiple conditions
-	 * 		- private static instance of the singleton class
-	 * 		- public static getter method to retrieve the same instance of the singleton
-	 * 		- private constructor
-	 */
-	// reuse c instead of creating new connections to the database
 	private static Connection c;
 
 
@@ -39,12 +29,6 @@ public class ConnectionUse{
 	}
 	
 	public static Connection getConnectionFromEnv() throws SQLException {
-		/*
-		 * In windows, search for environment variables in search bar
-		 * 	- set new system variables
-		 *  - RESTART IDE TO RESET THE VARIABLE
-		 */
-		
 		String url = System.getenv("DB_URL");
 		String username = System.getenv("DB_USER");
 		String password = System.getenv("DB_PASS");
