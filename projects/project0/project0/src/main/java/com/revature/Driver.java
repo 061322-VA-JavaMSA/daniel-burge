@@ -7,11 +7,11 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.revature.exceptions.LoginException;
-import com.revature.models.Task;
+
 import com.revature.models.User;
 
 import com.revature.services.Authservice;
-import com.revature.services.TaskService;
+
 import com.revature.services.UserService;
 
 public class Driver {
@@ -19,14 +19,14 @@ public class Driver {
 	static Scanner scan;
 	static Authservice as;
 	static UserService us;
-	static TaskService ts;
+	
 	private static Logger log = LogManager.getLogger(Driver.class);
 	
 	public static void main(String[] args) {
 		scan = new Scanner(System.in);
 		as = new Authservice();
 		us = new UserService();
-		ts = new TaskService();
+		
 		
 		String username = null;
 		String password = null;
@@ -59,15 +59,10 @@ public class Driver {
 		userTBC.setPassword(pass);
 		log.info(us.createUser(userTBC));
 		
-		System.out.println("Retrieve tasks for which user id?");
-		int userId = Integer.parseInt(scan.nextLine());
-		List<Task> tasksForUser = ts.getTasksByUserId(userId);
-		for(Task t : tasksForUser) {
-			System.out.println(t);
-		}
 		
 		scan.close();
-		System.out.println(us.getUsers());
+	
+
 	}
 
 }

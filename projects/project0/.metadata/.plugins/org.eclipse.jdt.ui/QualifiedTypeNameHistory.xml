@@ -4,7 +4,6 @@
     <fullyQualifiedTypeName name="java.sql.DriverManager"/>
     <fullyQualifiedTypeName name="java.util.Properties"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
-    <fullyQualifiedTypeName name="java.util.Objects"/>
     <fullyQualifiedTypeName name="com.revature.services.UserService"/>
     <fullyQualifiedTypeName name="com.revature.exceptions.LoginException"/>
     <fullyQualifiedTypeName name="com.revature.daos.TaskDAO"/>
@@ -21,4 +20,8 @@
     <fullyQualifiedTypeName name="com.revature.services.Authservice"/>
     <fullyQualifiedTypeName name="com.revature.services.TaskService"/>
     <fullyQualifiedTypeName name="com.revature.models.Task"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="com.revature.models.Store"/>
+    <fullyQualifiedTypeName name="java.util.Objects"/>
 </qualifiedTypeNameHistroy>

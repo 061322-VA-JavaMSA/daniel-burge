@@ -12,32 +12,38 @@ public class ConnectionUse{
 
 
 	
+	
+
 	public static Connection getConnectionFromFile() throws SQLException, IOException {
-		Properties prop = new Properties();
+		Properties file = new Properties();
 		ClassLoader loader = Thread.currentThread().getContextClassLoader();
-		prop.load(loader.getResourceAsStream("connection.properties"));
+		file.load(loader.getResourceAsStream("connection.properties"));
 		
-		String url = prop.getProperty("url");
-		String username = prop.getProperty("username");
-		String password = prop.getProperty("password");
-		
+		String url = file.getProperty("url");
+		String username = file.getProperty("username");
+		String password = file.getProperty("password");
+
 		if (c == null || c.isClosed()) {
 			c = DriverManager.getConnection(url, username, password);
+
 		}
-		
 		return c;
+
 	}
-	
+
 	public static Connection getConnectionFromEnv() throws SQLException {
+
 		String url = System.getenv("DB_URL");
 		String username = System.getenv("DB_USER");
+
 		String password = System.getenv("DB_PASS");
-		
+
 		if (c == null || c.isClosed()) {
 			c = DriverManager.getConnection(url, username, password);
+
 		}
-		
 		return c;
+
 	}}
 
 

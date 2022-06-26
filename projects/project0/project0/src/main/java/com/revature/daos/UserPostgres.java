@@ -7,17 +7,15 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-
 import com.revature.connectionutil.ConnectionUse;
 import com.revature.models.User;
-
 
 public class UserPostgres implements UserDAO{
 
 	@Override
 	public User createUser(User u) {
 		String sql = "insert into users (username, password) values (?,?) returning id;";
-		try(Connection c = ConnectionUse.getConnectionFromEnv()){
+		try(Connection c = (ConnectionUse.getConnectionFromEnv())){
 			PreparedStatement ps = c.prepareStatement(sql);
 			ps.setString(1, u.getUsername());
 			ps.setString(2, u.getPassword());
@@ -40,7 +38,7 @@ public class UserPostgres implements UserDAO{
 		String sql = "select * from users where id = ?;";
 		User user = null;
 		
-		try(Connection c = ConnectionUse.getConnectionFromEnv()){
+		try(Connection c = (ConnectionUse.getConnectionFromEnv())){
 			PreparedStatement ps = c.prepareStatement(sql);
 			
 			ps.setInt(1, id); // this refers to the 1st ? in the sql String
@@ -65,7 +63,7 @@ public class UserPostgres implements UserDAO{
 		String sql = "select * from users; ";
 		List<User> users = new ArrayList<>();
 		
-		try(Connection c = ConnectionUse.getConnectionFromEnv()){
+		try(Connection c = (ConnectionUse.getConnectionFromEnv())){
 			// no user input taken, no need for prepared statement
 			Statement s = c.createStatement();
 			ResultSet rs = s.executeQuery(sql);

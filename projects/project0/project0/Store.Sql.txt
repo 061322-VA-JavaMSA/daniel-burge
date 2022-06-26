@@ -1,0 +1,40 @@
+insert into users (username, password) values ( 'mzywicki0', 'SVJitOgY5fD0');
+insert into users (username, password) values ( 'vprandini1', 'kvovwA');
+insert into users (username, password) values ('frobben2', 'yylGPe3NZq');
+insert into users (username, password) values ( 'tklawi3', 'kymlYCn');
+insert into users (username, password) values ( 'fmcnelis4', 'OYm0gEE08s');
+insert into users (username, password) values ( 'bhawyes5', 'tGk88nU');
+insert into users (username, password) values ( 'rlerohan6', 'bmDRbSKYzNo');
+insert into users (username, password) values ( 'dmcguane7', 'EPdWr7RbFlUi');
+insert into users (username, password) values ( 'cchappell8', 'UrZoR6Lk');
+insert into users (username, password) values ( 'tbearman9', 'c87OrwT');
+CREATE TABLE Employees (
+    id serial primary key,
+    LastName varchar(255),
+    FirstName varchar(255),
+    Salary integer,
+   	Department varchar(255)
+);
+insert into Employees (LastName, FirstName,Salary,Department) values ('Michael','Scott', 65,'sports');
+insert into Employees (LastName, FirstName,Salary,Department) values ('Dwight', 'Schrute', 75, 'story');
+insert into Employees (LastName, FirstName,Salary,Department) values ('Toby','Flenderson',80,'racing');
+insert into Employees (LastName, FirstName,Salary,Department) values ('Jim', 'Halbert', 90, 'moba');
+insert into Employees (LastName, FirstName,Salary,Department) values ('Oscar', 'Martinez',90,'moba');
+insert into Employees (LastName, FirstName,Salary,Department) values ('Angelea', 'Martin', 75, 'moba');
+insert into Employees (LastName, FirstName,Salary,Department) values ('Kevin','Malone',70,'moba');
+insert into Employees (LastName, FirstName,Salary,Department) values ('Holly','Flax',60, 'fps');
+insert into Employees (LastName, FirstName,Salary,Department) values ('Creed','Branton',70,'sports');
+
+create table store(
+id serial primary key,
+genre varchar(50),
+game varchar(50),
+price integer
+);
+insert into store (genre,game,price) values ('FPS','Overwatch 2',0.00);
+insert into store (genre,game,price) values ('Sports', 'Nba 2k22', 60.00);
+insert into store (genre,game,price) values ('FPS', 'Call of Duty Vanguard', 60.00);
+insert into store (genre,game,price) values ('Sports', 'Rocket League', 0.00);
+insert into store (genre,game,price) values ('Single player', 'Kingdom Hearts 3',60.00);
+
+
