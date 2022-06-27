@@ -7,10 +7,14 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.BooleanSupplier;
+
 import com.revature.connectionutil.ConnectionUse;
 import com.revature.models.User;
 
 public class UserPostgres implements UserDAO{
+
+	public static BooleanSupplier updateUser;
 
 	@Override
 	public User createUser(User u) {

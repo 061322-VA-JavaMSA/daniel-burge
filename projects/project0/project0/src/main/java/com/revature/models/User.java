@@ -7,9 +7,11 @@ public class User {
 	private int id;
 	private String username;
 	private String password;
-	
 	public User() {
 		super();
+	}
+	public User(int id, String username, String password) {
+		
 		// TODO Auto-generated constructor stub
 	}
 

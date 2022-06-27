@@ -5,3 +5,4 @@
 12:36:13 [main] INFO  com.revature.Driver - User [id=0, username=, password=]
 12:52:40 [main] ERROR com.revature.Driver - Login exception was thrown: com.revature.exceptions.LoginException
 13:03:23 [main] ERROR com.revature.Driver - Login exception was thrown: com.revature.exceptions.LoginException
+15:19:17 [main] ERROR com.revature.Driver - Login exception was thrown: com.revature.exceptions.LoginException
