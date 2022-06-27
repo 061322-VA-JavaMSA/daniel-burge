@@ -6,3 +6,12 @@
 12:52:40 [main] ERROR com.revature.Driver - Login exception was thrown: com.revature.exceptions.LoginException
 13:03:23 [main] ERROR com.revature.Driver - Login exception was thrown: com.revature.exceptions.LoginException
 15:19:17 [main] ERROR com.revature.Driver - Login exception was thrown: com.revature.exceptions.LoginException
+09:39:01 [main] ERROR com.revature.Driver - Login exception was thrown: com.revature.exceptions.LoginException
+09:39:03 [main] INFO  com.revature.services.UserService - User: User [id=0, username=d, password=d] was created.
+09:39:03 [main] INFO  com.revature.Driver - User [id=0, username=d, password=d]
+09:55:02 [main] ERROR com.revature.Driver - Login exception was thrown: com.revature.exceptions.LoginException
+09:55:03 [main] INFO  com.revature.services.UserService - User: User [id=0, username=d, password=d] was created.
+09:55:03 [main] INFO  com.revature.Driver - User [id=0, username=d, password=d]
+09:56:36 [main] ERROR com.revature.Driver - Login exception was thrown: com.revature.exceptions.LoginException
+09:56:37 [main] INFO  com.revature.services.UserService - User: User [id=0, username=d, password=d] was created.
+09:56:37 [main] INFO  com.revature.Driver - User [id=0, username=d, password=d]

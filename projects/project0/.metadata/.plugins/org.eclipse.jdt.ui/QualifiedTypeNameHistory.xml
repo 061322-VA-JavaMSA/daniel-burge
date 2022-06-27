@@ -9,8 +9,6 @@
     <fullyQualifiedTypeName name="com.revature.daos.TaskDAO"/>
     <fullyQualifiedTypeName name="com.revature.daos.TaskPostgres"/>
     <fullyQualifiedTypeName name="com.revature.daos.UserDAO"/>
-    <fullyQualifiedTypeName name="com.revature.daos.UserPostgres"/>
-    <fullyQualifiedTypeName name="com.revature.models.User"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="org.apache.logging.log4j.Logger"/>
@@ -24,4 +22,6 @@
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="com.revature.models.Store"/>
     <fullyQualifiedTypeName name="java.util.Objects"/>
+    <fullyQualifiedTypeName name="com.revature.daos.UserPostgres"/>
+    <fullyQualifiedTypeName name="com.revature.models.User"/>
 </qualifiedTypeNameHistroy>

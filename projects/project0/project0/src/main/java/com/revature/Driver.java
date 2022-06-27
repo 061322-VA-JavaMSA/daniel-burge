@@ -7,18 +7,20 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.revature.exceptions.LoginException;
-
+import com.revature.models.Store;
 import com.revature.models.User;
 
 import com.revature.services.Authservice;
 
 import com.revature.services.UserService;
+import com.revature.services.StoreService;
 
 public class Driver {
 	
 	static Scanner scan;
 	static Authservice as;
 	static UserService us;
+	static StoreService ss;
 	
 	private static Logger log = LogManager.getLogger(Driver.class);
 	
@@ -58,6 +60,27 @@ public class Driver {
 		userTBC.setUsername(uname);
 		userTBC.setPassword(pass);
 		log.info(us.createUser(userTBC));
+		
+		List<Store> store = ss.getStore();
+		for(Store s: store) {
+			System.out.println(s);
+		}
+		// 2.table store
+		String genre = null;
+		String name = null;
+		int price = 0;
+		System.out.println("Create a store item genre: ");
+		String gen = scan.nextLine();
+		System.out.println("Create a store item name: ");
+		String names = scan.nextLine();
+		System.out.println("Create a price for item price: ");
+		double amount = scan.nextDouble();
+		Store storeTDB = new Store();
+		storeTDB.setGenre(gen);
+		storeTDB.setGame(names);
+		storeTDB.setPrice(amount);
+		log.info(ss.createStore(storeTDB));
+		
 		
 		
 		scan.close();

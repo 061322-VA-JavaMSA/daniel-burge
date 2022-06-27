@@ -10,7 +10,7 @@ import java.util.List;
 
 import com.revature.connectionutil.ConnectionUse;
 import com.revature.models.Store;
-import com.revature.models.User;
+
 
 public class StorePostgres implements StoreDao {
 
