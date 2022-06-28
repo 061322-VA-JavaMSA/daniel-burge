@@ -82,7 +82,7 @@ public class Driver {
 		storeTBC.setGame(game);
 		storeTBC.setPrice(price);
 		log.info(ss.createStore(storeTBC));
-	
+		System.exit(0);
 		System.out.print("List of games:");
 		
 		for(Store s: store) {System.out.println(s);}

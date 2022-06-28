@@ -33,7 +33,7 @@ public Store createStore (Store s) {
 
 public boolean deleteStorebyId(int id) {
 	boolean store = us.deleteStorebyid(id);
-	log.info("Store item: " + id + " was deleted.");
+	log.info("Store item: " + store + "was deleted.");
 	return store;
 	
 	

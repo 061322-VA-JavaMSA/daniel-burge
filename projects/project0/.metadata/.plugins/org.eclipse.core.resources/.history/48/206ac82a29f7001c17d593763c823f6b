@@ -6,7 +6,6 @@ import java.util.Scanner;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.revature.daos.StorePostgres;
 import com.revature.exceptions.LoginException;
 import com.revature.models.Store;
 import com.revature.models.User;
@@ -30,7 +29,6 @@ public class Driver {
 		as = new Authservice();
 		us = new UserService();
 		ss = new StoreService();
-		StorePostgres sp = new StorePostgres();
 		
 		String username = null;
 		String password = null;
@@ -82,15 +80,7 @@ public class Driver {
 		storeTBC.setGame(game);
 		storeTBC.setPrice(price);
 		log.info(ss.createStore(storeTBC));
-	
-		System.out.print("List of games:");
-		
-		for(Store s: store) {System.out.println(s);}
-		System.out.println("Delete a a game by id:");
-		ss.deleteStorebyId(scan.nextInt());
-
-		
-		
+		System.exit(0);
 		
 		
 		// retrieve an id pick.

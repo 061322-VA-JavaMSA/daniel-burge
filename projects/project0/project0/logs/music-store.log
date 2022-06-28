@@ -94,3 +94,28 @@
 10:12:38 [main] INFO  com.revature.Driver - User [id=12, username=tyler, password=jjj]
 10:12:44 [main] INFO  com.revature.services.UserService - User: User [id=0, username=tyler, password=jjj] was created.
 10:12:44 [main] INFO  com.revature.Driver - User [id=0, username=tyler, password=jjj]
+15:44:17 [main] INFO  com.revature.Driver - User [id=12, username=tyler, password=jjj]
+15:44:23 [main] INFO  com.revature.services.UserService - User: User [id=0, username=tyler, password=jjj] was created.
+15:44:23 [main] INFO  com.revature.Driver - User [id=0, username=tyler, password=jjj]
+15:45:02 [main] INFO  com.revature.services.StoreService - Store item: Store [id=8, genre=sports, game=NCAA Football 14, price=0.0] was created.
+15:45:02 [main] INFO  com.revature.Driver - Store [id=8, genre=sports, game=NCAA Football 14, price=0.0]
+16:27:59 [main] INFO  com.revature.Driver - User [id=12, username=tyler, password=jjj]
+16:28:06 [main] INFO  com.revature.services.UserService - User: User [id=0, username=tyler, password=jjjj] was created.
+16:28:06 [main] INFO  com.revature.Driver - User [id=0, username=tyler, password=jjjj]
+16:28:31 [main] INFO  com.revature.services.StoreService - Store item: Store [id=9, genre=single player, game=Uncharted, price=0.0] was created.
+16:28:31 [main] INFO  com.revature.Driver - Store [id=9, genre=single player, game=Uncharted, price=0.0]
+16:28:48 [main] INFO  com.revature.Driver - User [id=12, username=tyler, password=jjj]
+16:28:52 [main] INFO  com.revature.services.UserService - User: User [id=0, username=tyler, password=jjj] was created.
+16:28:52 [main] INFO  com.revature.Driver - User [id=0, username=tyler, password=jjj]
+16:29:11 [main] INFO  com.revature.services.StoreService - Store item: Store [id=10, genre=single player , game=Final Fantasy VII, price=0.0] was created.
+16:29:11 [main] INFO  com.revature.Driver - Store [id=10, genre=single player , game=Final Fantasy VII, price=0.0]
+16:29:25 [main] INFO  com.revature.services.StoreService - Store item: truewas deleted.
+16:30:20 [main] INFO  com.revature.Driver - User [id=12, username=tyler, password=jjj]
+16:30:24 [main] INFO  com.revature.services.UserService - User: User [id=0, username=tyler, password=jjjj] was created.
+16:30:24 [main] INFO  com.revature.Driver - User [id=0, username=tyler, password=jjjj]
+16:30:40 [main] INFO  com.revature.services.StoreService - Store item: Store [id=11, genre=single player, game=Tomb raider, price=0.0] was created.
+16:30:40 [main] INFO  com.revature.Driver - Store [id=11, genre=single player, game=Tomb raider, price=0.0]
+16:30:44 [main] INFO  com.revature.services.StoreService - Store item: 2was deleted.
+16:31:56 [main] ERROR com.revature.Driver - Login exception was thrown: com.revature.exceptions.LoginException
+16:32:01 [main] INFO  com.revature.services.UserService - User: User [id=0, username=tyler, password=jjj] was created.
+16:32:01 [main] INFO  com.revature.Driver - User [id=0, username=tyler, password=jjj]
