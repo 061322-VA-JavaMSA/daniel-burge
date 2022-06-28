@@ -67,7 +67,7 @@ public class Driver {
 		
 		List<Store> store = ss.getStore();
 		for(Store s : store) {
-			System.out.println(s);}
+			System.out.println(s);
 		System.out.println("Insert a game genre:");
 		String genre= scan.nextLine();
 		System.out.println("Insert a game name:");
@@ -79,8 +79,6 @@ public class Driver {
 		storeTBC.setGame(game);
 		storeTBC.setPrice(price);
 		log.info(ss.createStore(storeTBC));
-		System.exit(0);
-		
 		
 		// retrieve an id pick.
 		// scan.nextLine();
@@ -92,5 +90,5 @@ public class Driver {
 
 	}
 
-}
+}}
 

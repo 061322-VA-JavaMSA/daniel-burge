@@ -67,7 +67,7 @@ public class Driver {
 		
 		List<Store> store = ss.getStore();
 		for(Store s : store) {
-			System.out.println(s);}
+			System.out.println(s);
 		System.out.println("Insert a game genre:");
 		String genre= scan.nextLine();
 		System.out.println("Insert a game name:");
@@ -92,5 +92,5 @@ public class Driver {
 
 	}
 
-}
+}}
 

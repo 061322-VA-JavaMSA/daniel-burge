@@ -63,25 +63,11 @@ public class Driver {
 		log.info(us.createUser(userTBC));
 		
 		
-		System.out.println("List of games:");
+		System.out.println("Pick an item:");
 		
 		List<Store> store = ss.getStore();
 		for(Store s : store) {
-			System.out.println(s);}
-		System.out.println("Insert a game genre:");
-		String genre= scan.nextLine();
-		System.out.println("Insert a game name:");
-		String game= scan.nextLine();
-		System.out.println("Insert a game price:");
-		double price = scan.nextDouble();
-		Store storeTBC = new Store();
-		storeTBC.setGenre(genre);
-		storeTBC.setGame(game);
-		storeTBC.setPrice(price);
-		log.info(ss.createStore(storeTBC));
-		System.exit(0);
-		
-		
+			System.out.println(s);
 		// retrieve an id pick.
 		// scan.nextLine();
 		 //System.out.print("Pick an id # to purchase an game :" );
@@ -92,5 +78,5 @@ public class Driver {
 
 	}
 
-}
+}}
 
