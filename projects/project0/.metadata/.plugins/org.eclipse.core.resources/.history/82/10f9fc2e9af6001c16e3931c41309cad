@@ -68,7 +68,6 @@ public class Driver {
 		List<Store> store = ss.getStore();
 		for(Store s:store)
 			System.out.println(s);
-		System.exit(0);
 		// retrieve an id pick.
 		// scan.nextLine();
 		 //System.out.print("Pick an id # to purchase an game :" );

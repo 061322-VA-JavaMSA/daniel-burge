@@ -20,8 +20,9 @@
     <fullyQualifiedTypeName name="com.revature.models.Task"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
-    <fullyQualifiedTypeName name="com.revature.models.Store"/>
     <fullyQualifiedTypeName name="java.util.Objects"/>
     <fullyQualifiedTypeName name="com.revature.daos.UserPostgres"/>
     <fullyQualifiedTypeName name="com.revature.models.User"/>
+    <fullyQualifiedTypeName name="com.revature.daos.StorePostgres"/>
+    <fullyQualifiedTypeName name="com.revature.models.Store"/>
 </qualifiedTypeNameHistroy>

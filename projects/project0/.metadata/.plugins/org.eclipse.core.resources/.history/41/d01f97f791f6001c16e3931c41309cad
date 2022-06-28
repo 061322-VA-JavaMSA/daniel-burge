@@ -28,7 +28,7 @@ public class Driver {
 		scan = new Scanner(System.in);
 		as = new Authservice();
 		us = new UserService();
-		ss = new StoreService();
+		
 		
 		String username = null;
 		String password = null;
@@ -43,7 +43,6 @@ public class Driver {
 		} catch (LoginException e) {
 			System.out.println("Wrong username/password");
 			log.error("Login exception was thrown: " + e.fillInStackTrace());
-			
 //			e.printStackTrace(); 
 		}
 
@@ -62,19 +61,29 @@ public class Driver {
 		userTBC.setPassword(pass);
 		log.info(us.createUser(userTBC));
 		
-		
-		System.out.println("Pick an item:");
-		String pitem = scan.nextLine();
 		List<Store> store = ss.getStore();
-		for(Store s:store)
+		for(Store s: store) {
 			System.out.println(s);
-		System.exit(0);
-		// retrieve an id pick.
-		// scan.nextLine();
-		 //System.out.print("Pick an id # to purchase an game :" );
-		// int id = scan.nextInt();
+		}
+		// 2.table store
+		String genre = null;
+		String name = null;
+		int price = 0;
+		System.out.println("Create a store item genre: ");
+		String gen = scan.nextLine();
+		System.out.println("Create a store item name: ");
+		String names = scan.nextLine();
+		System.out.println("Create a price for item price: ");
+		double amount = scan.nextDouble();
+		Store storeTDB = new Store();
+		storeTDB.setGenre(gen);
+		storeTDB.setGame(names);
+		storeTDB.setPrice(amount);
+		log.info(ss.createStore(storeTDB));
 		
-	
+		
+		
+		scan.close();
 	
 
 	}
