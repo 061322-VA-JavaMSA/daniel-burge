@@ -17,7 +17,7 @@ public class StorePostgres implements StoreDao {
 	@Override
 	public Store create(Store s) {
 		String sql = "insert into store (genre, game,price) values (?,?,?) returning id;";
-		try(Connection c = (ConnectionUse.getConnectionFromFile())){
+		try(Connection c = (ConnectionUse.getConnectionFromEnv())){
 			PreparedStatement ps = c.prepareStatement(sql);
 			ps.setString(1, s.getGenre());
 			ps.setString(2, s.getGame());
@@ -41,7 +41,7 @@ public class StorePostgres implements StoreDao {
 		String sql = "select * from store where id = ?;";
 		Store store = null;
 		
-		try(Connection c = (ConnectionUse.getConnectionFromFile())){
+		try(Connection c = (ConnectionUse.getConnectionFromEnv())){
 			PreparedStatement ps = c.prepareStatement(sql);
 			
 			ps.setInt(1, id); // this refers to the 1st ? in the sql String
@@ -66,7 +66,7 @@ public class StorePostgres implements StoreDao {
 		String sql = "select * from store; ";
 		List<Store> store = new ArrayList<>();
 		
-		try(Connection c = (ConnectionUse.getConnectionFromFile())){
+		try(Connection c = (ConnectionUse.getConnectionFromEnv())){
 			// no user input taken, no need for prepared statement
 			Statement s = c.createStatement();
 			ResultSet rs = s.executeQuery(sql);
@@ -94,7 +94,7 @@ public class StorePostgres implements StoreDao {
 		String sql = "select * from store where genre  = ?;";
 		Store s = null;
 		
-		try (Connection c = ConnectionUse.getConnectionFromFile();){
+		try (Connection c = ConnectionUse.getConnectionFromEnv();){
 			PreparedStatement ps = c.prepareStatement(sql);
 			
 			ps.setString(1, genre); // this refers to the 1st "?" in the sql string, allows to inject data
@@ -122,7 +122,7 @@ public class StorePostgres implements StoreDao {
 		String sql = "update store set genre = ?, game = ?, price = ?  where id = ?;";
 		int rowsChanged = -1;
 		
-		try(Connection c = ConnectionUse.getConnectionFromFile()){
+		try(Connection c = ConnectionUse.getConnectionFromEnv()){
 			PreparedStatement ps = c.prepareStatement(sql);
 			
 			ps.setString(1, s.getGenre());
@@ -147,7 +147,7 @@ public class StorePostgres implements StoreDao {
 	public boolean deleteStorebyid(int id) {
 		String sql = "delete from store where id = ?;";
 		int rowsChanged = -1;
-		try(Connection c = ConnectionUse.getConnectionFromFile()){
+		try(Connection c = ConnectionUse.getConnectionFromEnv()){
 			PreparedStatement ps = c.prepareStatement(sql);
 			
 			ps.setInt(1, id);
