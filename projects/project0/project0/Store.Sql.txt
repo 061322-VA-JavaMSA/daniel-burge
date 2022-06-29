@@ -36,5 +36,8 @@ insert into store (genre,game,price) values ('Sports', 'Nba 2k22', 60.00);
 insert into store (genre,game,price) values ('FPS', 'Call of Duty Vanguard', 60.00);
 insert into store (genre,game,price) values ('Sports', 'Rocket League', 0.00);
 insert into store (genre,game,price) values ('Single player', 'Kingdom Hearts 3',60.00);
+alter table users
+ADD status varchar NOT NULL
+CONSTRAINT DK_status DEFAULT 'customer';
 
 

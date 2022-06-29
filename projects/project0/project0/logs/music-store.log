@@ -119,3 +119,22 @@
 16:31:56 [main] ERROR com.revature.Driver - Login exception was thrown: com.revature.exceptions.LoginException
 16:32:01 [main] INFO  com.revature.services.UserService - User: User [id=0, username=tyler, password=jjj] was created.
 16:32:01 [main] INFO  com.revature.Driver - User [id=0, username=tyler, password=jjj]
+15:02:11 [main] INFO  com.revature.services.UserService - User: User [id=0, username=, password=tyler] was created.
+15:02:11 [main] INFO  com.revature.Driver - User [id=0, username=, password=tyler]
+15:02:50 [main] INFO  com.revature.services.UserService - User: User [id=0, username=, password=daniel] was created.
+15:02:50 [main] INFO  com.revature.Driver - User [id=0, username=, password=daniel]
+15:03:23 [main] ERROR com.revature.Driver - Login exception was thrown: com.revature.exceptions.LoginException
+15:10:15 [main] INFO  com.revature.services.UserService - User: User [id=0, username=, password=tyler] was created.
+15:10:15 [main] INFO  com.revature.Driver - User [id=0, username=, password=tyler]
+15:13:41 [main] ERROR com.revature.Driver - Login exception was thrown: com.revature.exceptions.LoginException
+15:16:19 [main] INFO  com.revature.services.UserService - User: User [id=0, username=, password=daniel] was created.
+15:16:19 [main] INFO  com.revature.Driver - User [id=0, username=, password=daniel]
+15:17:35 [main] ERROR com.revature.Driver - Login exception was thrown: com.revature.exceptions.LoginException
+15:24:01 [main] INFO  com.revature.Driver - User [id=12, username=tyler, password=jjj]
+15:24:15 [main] INFO  com.revature.services.UserService - User: User [id=32, username=tyler , password=jjj] was created.
+15:24:15 [main] INFO  com.revature.Driver - User [id=32, username=tyler , password=jjj]
+15:25:33 [main] INFO  com.revature.services.StoreService - Store item: Store [id=12, genre=single player, game=Kovaks, price=0.0] was created.
+15:25:33 [main] INFO  com.revature.Driver - Store [id=12, genre=single player, game=Kovaks, price=0.0]
+15:25:44 [main] INFO  com.revature.services.StoreService - Store item: 12 was deleted.
+15:49:31 [main] INFO  com.revature.Driver - User [id=12, username=tyler, password=jjj]
+15:53:07 [main] INFO  com.revature.Driver - User [id=12, username=tyler, password=jjj, status=null]

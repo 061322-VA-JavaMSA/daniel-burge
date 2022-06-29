@@ -7,10 +7,17 @@ public class User {
 	private int id;
 	private String username;
 	private String password;
+	private String status;
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
 	public User() {
 		super();
 	}
-	public User(int id, String username, String password) {
+	public User(int id, String username, String password,String status) {
 		
 		// TODO Auto-generated constructor stub
 	}
@@ -38,12 +45,13 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	
 
+	
 	@Override
 	public int hashCode() {
-		return Objects.hash(id, password, username);
+		return Objects.hash(id, password, status, username);
 	}
-
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -53,10 +61,13 @@ public class User {
 		if (getClass() != obj.getClass())
 			return false;
 		User other = (User) obj;
-		return id == other.id && Objects.equals(password, other.password) && Objects.equals(username, other.username);
+		return id == other.id && Objects.equals(password, other.password) && Objects.equals(status, other.status)
+				&& Objects.equals(username, other.username);
 	}
-
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", username=" + username + ", password=" + password + "]";
-}}
+		return "User [id=" + id + ", username=" + username + ", password=" + password + ", status=" + status + "]";
+	}
+
+	
+}
