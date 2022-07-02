@@ -8,19 +8,12 @@ public class User {
 	private String username;
 	private String password;
 	private String status;
-	public String getStatus() {
-		return status;
-	}
-	public void setStatus(String status) {
-		this.status = status;
-	}
+
+	
 	public User() {
 		super();
 	}
-	public User(int id, String username, String password,String status) {
-		
-		// TODO Auto-generated constructor stub
-	}
+	
 
 	public int getId() {
 		return id;
@@ -44,6 +37,12 @@ public class User {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
 	}
 	
 

@@ -51,8 +51,8 @@ public class StorePostgres implements StoreDao {
 			if(rs.next()) {
 				store = new Store();
 				store.setId(rs.getInt("id"));
-				store.setGenre(rs.getString("username"));
-				store.setGame(rs.getString("password"));
+				store.setGenre(rs.getString("genre"));
+				store.setGame(rs.getString("game"));
 				store.setPrice(rs.getDouble("price"));
 			}
 		} catch (SQLException e) {

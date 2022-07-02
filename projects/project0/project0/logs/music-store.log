@@ -138,3 +138,56 @@
 15:25:44 [main] INFO  com.revature.services.StoreService - Store item: 12 was deleted.
 15:49:31 [main] INFO  com.revature.Driver - User [id=12, username=tyler, password=jjj]
 15:53:07 [main] INFO  com.revature.Driver - User [id=12, username=tyler, password=jjj, status=null]
+10:40:53 [main] INFO  com.revature.Driver - User [id=12, username=tyler, password=jjj, status=null]
+10:41:23 [main] INFO  com.revature.services.UserService - User: User [id=33, username=daniel, password=pass, status=null] was created.
+10:41:23 [main] INFO  com.revature.Driver - User [id=33, username=daniel, password=pass, status=null]
+10:42:13 [main] INFO  com.revature.services.StoreService - Store item: Store [id=13, genre=fps, game=halo infinite, price=0.0] was created.
+10:42:13 [main] INFO  com.revature.Driver - Store [id=13, genre=fps, game=halo infinite, price=0.0]
+10:42:26 [main] INFO  com.revature.services.StoreService - Store item: 7 was deleted.
+11:08:54 [main] INFO  com.revature.Driver - User [id=12, username=tyler, password=jjj, status=null]
+11:09:27 [main] INFO  com.revature.Driver - User [id=12, username=tyler, password=jjj, status=null]
+11:09:39 [main] INFO  com.revature.services.UserService - User: User [id=0, username=tyler, password=jjj, status=null] was created.
+11:09:39 [main] INFO  com.revature.Driver - User [id=0, username=tyler, password=jjj, status=null]
+11:30:06 [main] INFO  com.revature.Driver - User [id=12, username=tyler, password=jjj, status=null]
+11:30:27 [main] ERROR com.revature.Driver - Login exception was thrown: com.revature.exceptions.LoginException
+11:31:13 [main] INFO  com.revature.Driver - User [id=12, username=tyler, password=jjj, status=null]
+11:38:01 [main] INFO  com.revature.services.UserService - User: User [id=0, username=, password=dantheman, status=null] was created.
+11:38:01 [main] INFO  com.revature.Driver - User [id=0, username=, password=dantheman, status=null]
+11:44:23 [main] INFO  com.revature.services.UserService - User: User [id=0, username=, password=tyler, status=null] was created.
+11:44:23 [main] INFO  com.revature.Driver - User [id=0, username=, password=tyler, status=null]
+11:51:37 [main] INFO  com.revature.services.UserService - User: User [id=0, username=, password=tyler, status=null] was created.
+11:51:37 [main] INFO  com.revature.Driver - User [id=0, username=, password=tyler, status=null]
+15:37:23 [main] INFO  com.revature.services.UserService - User: User [id=0, username=, password=espn, status=null] was created.
+15:13:58 [main] INFO  com.revature.services.UserService - User: User [id=0, username=, password=sonic, status=null] was created.
+15:15:12 [main] INFO  com.revature.services.UserService - User: User [id=0, username=, password=sonic, status=null] was created.
+15:17:02 [main] INFO  com.revature.services.UserService - User: User [id=0, username=, password=sonic, status=null] was created.
+15:17:21 [main] INFO  com.revature.services.UserService - User: User [id=0, username=, password=sonic, status=null] was created.
+15:20:12 [main] INFO  com.revature.services.UserService - User: User [id=0, username=, password=sonic, status=null] was created.
+15:23:33 [main] ERROR com.revature.Driver - Login exception was thrown: com.revature.exceptions.LoginException
+15:39:32 [main] ERROR com.revature.Driver - Login exception was thrown: com.revature.exceptions.LoginException
+15:48:15 [main] INFO  com.revature.Driver - User [id=12, username=tyler, password=jjj, status=customer]
+15:48:27 [main] INFO  com.revature.services.UserService - User: User [id=43, username=sonic, password=forty, status=null] was created.
+15:48:27 [main] INFO  com.revature.Driver - User [id=43, username=sonic, password=forty, status=null]
+15:48:46 [main] INFO  com.revature.services.StoreService - Store item: Store [id=14, genre=fps, game=tyler, price=0.0] was created.
+15:48:46 [main] INFO  com.revature.Driver - Store [id=14, genre=fps, game=tyler, price=0.0]
+15:48:49 [main] INFO  com.revature.services.StoreService - Store item: 1 was deleted.
+22:08:34 [main] INFO  com.revature.Driver - User [id=12, username=tyler, password=jjj, status=customer]
+22:08:51 [main] INFO  com.revature.services.UserService - User: User [id=0, username=tyler, password=jjj, status=null] was created.
+22:08:51 [main] INFO  com.revature.Driver - User [id=0, username=tyler, password=jjj, status=null]
+22:09:11 [main] INFO  com.revature.services.StoreService - Store item: Store [id=15, genre=fps , game=Starcraft, price=0.0] was created.
+22:09:11 [main] INFO  com.revature.Driver - Store [id=15, genre=fps , game=Starcraft, price=0.0]
+22:09:18 [main] INFO  com.revature.services.StoreService - Store item: 14 was deleted.
+22:12:50 [main] INFO  com.revature.Driver - User [id=12, username=tyler, password=jjj, status=customer]
+22:12:55 [main] INFO  com.revature.services.UserService - User: User [id=0, username=tyler, password=jjj, status=null] was created.
+22:12:55 [main] INFO  com.revature.Driver - User [id=0, username=tyler, password=jjj, status=null]
+22:13:09 [main] INFO  com.revature.services.StoreService - Store item: Store [id=16, genre=fps, game=Cod, price=0.0] was created.
+22:13:09 [main] INFO  com.revature.Driver - Store [id=16, genre=fps, game=Cod, price=0.0]
+22:13:13 [main] INFO  com.revature.services.StoreService - Store item: 16 was deleted.
+22:13:17 [main] INFO  com.revature.services.StoreService - Store item: 15was offered
+22:14:11 [main] INFO  com.revature.Driver - User [id=12, username=tyler, password=jjj, status=customer]
+22:14:15 [main] INFO  com.revature.services.UserService - User: User [id=0, username=tyler, password=jjj, status=null] was created.
+22:14:15 [main] INFO  com.revature.Driver - User [id=0, username=tyler, password=jjj, status=null]
+22:14:22 [main] INFO  com.revature.services.StoreService - Store item: Store [id=17, genre=fps, game=cod, price=0.0] was created.
+22:14:22 [main] INFO  com.revature.Driver - Store [id=17, genre=fps, game=cod, price=0.0]
+22:14:28 [main] INFO  com.revature.services.StoreService - Store item: 16 was deleted.
+22:14:30 [main] INFO  com.revature.services.StoreService - Store item: 3was offered

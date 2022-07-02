@@ -38,4 +38,12 @@ public boolean deleteStorebyId(int id) {
 	
 	
 }
+
+public Store retrieveStorebyId(int id) {
+	// TODO Auto-generated method stub
+	Store store = us.retrieveStoreById(id);
+	log.info("Store item: " + id + "was offered");
+	return store;
+	
+}
 }

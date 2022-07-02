@@ -24,6 +24,7 @@ public class Driver {
 	static UserService us;
 	static StoreService ss;
 	
+	
 	private static Logger log = LogManager.getLogger(Driver.class);
 	
 	public static void main(String[] args) {
@@ -31,7 +32,9 @@ public class Driver {
 		as = new Authservice();
 		us = new UserService();
 		ss = new StoreService();
+		
 		StorePostgres sp = new StorePostgres();
+		//***** Code attempt at making a navigated page****
 		//boolean apex = true;
 		//while(apex == true) {
 		//String username = null;
@@ -110,28 +113,27 @@ public class Driver {
 	//	}
 		
 	//	}
-		String username = null;
-		String password = null;
+		
+
+
 		
 		System.out.println("Please enter username:");
-		username = scan.nextLine();
+		String username = scan.nextLine();
 		System.out.println("Please enter password:");
-		password = scan.nextLine();
+		String password = scan.nextLine();
 		
 		try {
 			log.info(as.login(username, password));
+			System.out.println("Successful login");
 		} catch (LoginException e) {
-			//System.out.println("Wrong username/password");
-			//log.error("Login exception was thrown: " + e.fillInStackTrace());
+			System.out.println("Wrong username/password");
+			log.error("Login exception was thrown: " + e.fillInStackTrace());
 			
 			e.printStackTrace(); 
 		}
 
 		
-		List<User> users = us.getUsers();
-		for(User u : users) {
-			System.out.println(u);
-		}	
+		
 		// "1; drop table users"
 		System.out.println("Create an username:");
 	String uname = scan.nextLine();
@@ -166,15 +168,18 @@ public class Driver {
 		for(Store s: store) {System.out.println(s);}
 		System.out.println("Delete a a game by id:");
 		ss.deleteStorebyId(scan.nextInt());
-		}
+		
+		System.out.println("Make an offer for a game:");
+		for(Store s:store) {System.out.println(s);}
+		ss.retrieveStorebyId(scan.nextInt());
+		
+	}
 		
 		
-		
-		
-		// retrieve an id pick.
+		//retrieve an id pick.
 		//scan.nextLine();
 		// System.out.print("Pick an id # to purchase an game :" );
-		// int id = scan.nextInt();
+	//	int id = scan.nextInt();
 		
 	
 	
