@@ -8,11 +8,12 @@ import org.apache.logging.log4j.Logger;
 
 import com.revature.daos.StorePostgres;
 import com.revature.exceptions.LoginException;
+import com.revature.models.Offer;
 import com.revature.models.Store;
 import com.revature.models.User;
 
 import com.revature.services.Authservice;
-
+import com.revature.services.OfferService;
 import com.revature.services.UserService;
 import com.revature.services.StoreService;
 
@@ -23,6 +24,7 @@ public class Driver {
 	static Authservice as;
 	static UserService us;
 	static StoreService ss;
+	static OfferService os;
 	
 	
 	private static Logger log = LogManager.getLogger(Driver.class);
@@ -32,6 +34,7 @@ public class Driver {
 		as = new Authservice();
 		us = new UserService();
 		ss = new StoreService();
+		 os = new OfferService();
 		
 		StorePostgres sp = new StorePostgres();
 		//***** Code attempt at making a navigated page****
@@ -170,8 +173,9 @@ public class Driver {
 		ss.deleteStorebyId(scan.nextInt());
 		
 		System.out.println("Make an offer for a game:");
-		for(Store s:store) {System.out.println(s);}
-		ss.retrieveStorebyId(scan.nextInt());
+		System.out.println("Retrieve tasks for which user id?");
+		
+		
 		
 	}
 		
