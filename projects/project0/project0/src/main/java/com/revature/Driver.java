@@ -172,10 +172,24 @@ public class Driver {
 		System.out.println("Delete a a game by id:");
 		ss.deleteStorebyId(scan.nextInt());
 		
-		System.out.println("Make an offer for a game:");
-		System.out.println("Retrieve tasks for which user id?");
 		
+		for(Store s: store) {System.out.println(s);}
+		int storeid;
+		int amount;
+		int userid;
 		
+		Offer o = new Offer();
+		System.out.println("Pick the id of the item you would like to purchase");
+		storeid = scan.nextInt();
+		System.out.println("Enter the offer you would like to make");
+		amount = scan.nextInt();
+		System.out.println("Enter your user id in the database");
+		userid = scan.nextInt();
+		o.setOfferID(storeid);
+		o.setAmount(amount);
+		o.setUserID(userid);
+		os.MakeanOffer(o);
+		System.out.println("Offer has been created.");
 		
 	}
 		

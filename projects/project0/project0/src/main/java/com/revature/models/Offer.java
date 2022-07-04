@@ -59,6 +59,10 @@ public class Offer {
 		return "Offer [offerID=" + offerID + ", status=" + status + ", gamingID=" + gamingID + ", amount=" + amount
 				+ ", userID=" + userID + "]";
 	}
+	public static void add(Offer o) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 
 }

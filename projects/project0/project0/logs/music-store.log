@@ -191,3 +191,41 @@
 22:14:22 [main] INFO  com.revature.Driver - Store [id=17, genre=fps, game=cod, price=0.0]
 22:14:28 [main] INFO  com.revature.services.StoreService - Store item: 16 was deleted.
 22:14:30 [main] INFO  com.revature.services.StoreService - Store item: 3was offered
+22:54:52 [main] INFO  com.revature.Driver - User [id=12, username=tyler, password=jjj, status=customer]
+22:54:56 [main] INFO  com.revature.services.UserService - User: User [id=0, username=tyler, password=jjj, status=null] was created.
+22:54:56 [main] INFO  com.revature.Driver - User [id=0, username=tyler, password=jjj, status=null]
+22:55:01 [main] INFO  com.revature.services.StoreService - Store item: Store [id=18, genre=1, game=1, price=1.0] was created.
+22:55:01 [main] INFO  com.revature.Driver - Store [id=18, genre=1, game=1, price=1.0]
+22:55:09 [main] INFO  com.revature.services.StoreService - Store item: 18 was deleted.
+22:55:47 [main] INFO  com.revature.services.OfferService - Your offer Offer [offerID=3, status=null, gamingID=0, amount=10, userID=0] has been recieved.
+22:56:52 [main] ERROR com.revature.Driver - Login exception was thrown: com.revature.exceptions.LoginException
+22:56:58 [main] INFO  com.revature.services.UserService - User: User [id=0, username=tyler, password=jjj, status=null] was created.
+22:56:58 [main] INFO  com.revature.Driver - User [id=0, username=tyler, password=jjj, status=null]
+22:57:02 [main] INFO  com.revature.services.StoreService - Store item: Store [id=19, genre=1, game=1, price=1.0] was created.
+22:57:02 [main] INFO  com.revature.Driver - Store [id=19, genre=1, game=1, price=1.0]
+22:57:05 [main] INFO  com.revature.services.StoreService - Store item: 18 was deleted.
+22:57:19 [main] INFO  com.revature.services.OfferService - Your offer Offer [offerID=5, status=null, gamingID=0, amount=10, userID=0] has been recieved.
+22:57:49 [main] INFO  com.revature.Driver - User [id=12, username=tyler, password=jjj, status=customer]
+22:57:53 [main] INFO  com.revature.services.UserService - User: User [id=0, username=tyler, password=jjj, status=null] was created.
+22:57:53 [main] INFO  com.revature.Driver - User [id=0, username=tyler, password=jjj, status=null]
+22:58:15 [main] INFO  com.revature.Driver - User [id=12, username=tyler, password=jjj, status=customer]
+22:58:18 [main] INFO  com.revature.services.UserService - User: User [id=0, username=tyler, password=jjj, status=null] was created.
+22:58:18 [main] INFO  com.revature.Driver - User [id=0, username=tyler, password=jjj, status=null]
+22:58:23 [main] INFO  com.revature.services.StoreService - Store item: Store [id=20, genre=1, game=1, price=1.0] was created.
+22:58:23 [main] INFO  com.revature.Driver - Store [id=20, genre=1, game=1, price=1.0]
+22:58:29 [main] INFO  com.revature.services.StoreService - Store item: 19 was deleted.
+22:58:40 [main] INFO  com.revature.services.OfferService - Your offer Offer [offerID=1, status=null, gamingID=0, amount=2, userID=1] has been recieved.
+23:00:10 [main] INFO  com.revature.Driver - User [id=12, username=tyler, password=jjj, status=customer]
+23:00:13 [main] INFO  com.revature.services.UserService - User: User [id=0, username=tyler, password=jjj, status=null] was created.
+23:00:13 [main] INFO  com.revature.Driver - User [id=0, username=tyler, password=jjj, status=null]
+23:00:17 [main] INFO  com.revature.services.StoreService - Store item: Store [id=21, genre=1, game=1, price=1.0] was created.
+23:00:17 [main] INFO  com.revature.Driver - Store [id=21, genre=1, game=1, price=1.0]
+23:00:23 [main] INFO  com.revature.services.StoreService - Store item: 20 was deleted.
+23:00:34 [main] INFO  com.revature.services.OfferService - Your offer Offer [offerID=3, status=null, gamingID=0, amount=10, userID=0] has been recieved.
+23:01:09 [main] INFO  com.revature.Driver - User [id=12, username=tyler, password=jjj, status=customer]
+23:01:15 [main] INFO  com.revature.services.UserService - User: User [id=0, username=tyler, password=jjj, status=null] was created.
+23:01:15 [main] INFO  com.revature.Driver - User [id=0, username=tyler, password=jjj, status=null]
+23:01:20 [main] INFO  com.revature.services.StoreService - Store item: Store [id=22, genre=1, game=1, price=1.0] was created.
+23:01:20 [main] INFO  com.revature.Driver - Store [id=22, genre=1, game=1, price=1.0]
+23:01:23 [main] INFO  com.revature.services.StoreService - Store item: 21 was deleted.
+23:01:35 [main] INFO  com.revature.services.OfferService - Your offer Offer [offerID=0, status=null, gamingID=0, amount=10, userID=0] has been recieved.
