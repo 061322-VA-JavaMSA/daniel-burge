@@ -16,7 +16,7 @@ public class OfferPostgres implements OfferDAO {
 	@Override
 	public List<Offer> retrieveOffers() {
 		String sql = "select * from offers;";
-		List<Offer> offer = new ArrayList();
+		List<Offer> offer = new ArrayList<Offer>();
 		try(Connection c =  (ConnectionUse.getConnectionFromFile())){
 			Statement s =  (Statement) c.createStatement();
 			ResultSet rs = ((java.sql.Statement) s).executeQuery(sql);
@@ -64,7 +64,7 @@ String sql = "update offers set status = (?) where offer_id = (?);";
 
 	@Override
 	public Offer makeanOffer(Offer o) {
-		String sql = "insert into offers (offer_id, amount, user_id) values (?,?,?) returning offer_id, gaming_id, amount, user_id;";
+		String sql = "insert into offers (gaming_id, amount, user_id) values (?,?,?) returning offer_id,gaming_id,amount,user_id;";
 		try(Connection c = (ConnectionUse.getConnectionFromFile())){
 			PreparedStatement ps = c.prepareStatement(sql);
 			ps.setInt(1, o.getGamingID());
@@ -73,11 +73,9 @@ String sql = "update offers set status = (?) where offer_id = (?);";
 			ResultSet rs = ps.executeQuery();
 			if(rs.next()) {
 				o.setOfferID(rs.getInt("offer_id"));
-				o.setGamingID(rs.getInt("gaming_id"));
-				o.setAmount(rs.getInt("amount"));
-				o.setUserID(rs.getInt("user_id"));
-			}
 			
+			
+			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
@@ -85,4 +83,8 @@ String sql = "update offers set status = (?) where offer_id = (?);";
 		return o;
 	}
 
+
+
+
+	
 }

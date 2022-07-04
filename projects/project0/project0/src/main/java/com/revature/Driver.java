@@ -174,20 +174,21 @@ public class Driver {
 		
 		
 		for(Store s: store) {System.out.println(s);}
-		int storeid;
+		int gaming_id;
 		int amount;
-		int userid;
+		int user_id;
 		
+
 		Offer o = new Offer();
 		System.out.println("Pick the id of the item you would like to purchase");
-		storeid = scan.nextInt();
+		gaming_id = scan.nextInt();
 		System.out.println("Enter the offer you would like to make");
 		amount = scan.nextInt();
 		System.out.println("Enter your user id in the database");
-		userid = scan.nextInt();
-		o.setOfferID(storeid);
+		user_id = scan.nextInt();
+		o.setGamingID(gaming_id);
 		o.setAmount(amount);
-		o.setUserID(userid);
+		o.setUserID(user_id);
 		os.MakeanOffer(o);
 		System.out.println("Offer has been created.");
 		

@@ -9,4 +9,6 @@ public interface OfferDAO{
 	public Offer updateOffer(Offer o);
 	public Offer makeanOffer(Offer o);
 
+
+
 }

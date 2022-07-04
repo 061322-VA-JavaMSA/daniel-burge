@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.sql.DriverManager"/>
     <fullyQualifiedTypeName name="java.util.Properties"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
@@ -10,19 +9,26 @@
     <fullyQualifiedTypeName name="com.revature.daos.TaskPostgres"/>
     <fullyQualifiedTypeName name="com.revature.daos.UserDAO"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="org.apache.logging.log4j.Logger"/>
     <fullyQualifiedTypeName name="org.apache.logging.log4j.LogManager"/>
-    <fullyQualifiedTypeName name="java.sql.SQLException"/>
-    <fullyQualifiedTypeName name="com.revature.connectionutil.ConnectionUse"/>
     <fullyQualifiedTypeName name="com.revature.services.Authservice"/>
     <fullyQualifiedTypeName name="com.revature.services.TaskService"/>
     <fullyQualifiedTypeName name="com.revature.models.Task"/>
-    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
-    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="java.util.Objects"/>
     <fullyQualifiedTypeName name="com.revature.daos.UserPostgres"/>
     <fullyQualifiedTypeName name="com.revature.models.User"/>
     <fullyQualifiedTypeName name="com.revature.models.Store"/>
     <fullyQualifiedTypeName name="com.revature.daos.StorePostgres"/>
+    <fullyQualifiedTypeName name="com.revature.daos.OfferDAO"/>
+    <fullyQualifiedTypeName name="com.revature.daos.OfferPostgres"/>
+    <fullyQualifiedTypeName name="org.apache.logging.log4j.Logger"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.revature.models.Offer"/>
+    <fullyQualifiedTypeName name="com.revature.services.OfferService"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.revature.connectionutil.ConnectionUse"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="java.beans.Statement"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
 </qualifiedTypeNameHistroy>
