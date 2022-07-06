@@ -1,0 +1,123 @@
+package com.revature.daos;
+
+import java.beans.Statement;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.revature.connectionutil.ConnectionUse;
+import com.revature.models.Offer;
+import com.revature.models.Store;
+
+public class OfferPostgres implements OfferDAO {
+
+	@Override
+	public Offer create(Offer o) {
+		String sql = "select * from offers;";
+		
+		try(Connection c =  (ConnectionUse.getConnectionFromFile())){
+			Statement s =  (Statement) c.createStatement();
+			ResultSet rs = ((java.sql.Statement) s).executeQuery(sql);
+			while(rs.next()) {
+				Offer o1 = new Offer();
+				o1.setOfferID(rs.getInt("offer_id"));
+				o1.setStatus(rs.getString("status"));
+				o1.setGamingID(rs.getInt("gaming_id"));
+				o1.setAmount(rs.getInt("amount"));
+				o1.setUserID(rs.getInt("user_id"));
+				Offer.add(o1);
+			}
+			
+		} catch(SQLException e) {
+			e.printStackTrace();
+		}
+		return o;
+			
+		}
+	public List<Offer> retrieveOffer() {
+		String sql = "select * from offer; ";
+		List<Offer> offer = new ArrayList<>();
+		
+		try(Connection c = (ConnectionUse.getConnectionFromFile())){
+			// no user input taken, no need for prepared statement
+			Statement s = (Statement) c.createStatement();
+			ResultSet rs = ((java.sql.Statement) s).executeQuery(sql);
+			
+			while(rs.next()) {
+				// extract each field from rs for each record, map them to a User object and add them to the users arraylist
+				Offer offer1 = new Offer();
+				offer1.setOfferID(rs.getInt("offer_id"));
+				offer1.setStatus(rs.getString("status"));
+				offer1.setGamingID(rs.getInt("gaming_id"));
+				offer1.setAmount(rs.getInt("price"));
+				offer1.setUserID(rs.getInt("user_id"));
+				
+				offer.add(offer1);
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return offer;
+	}
+				
+		
+	
+
+	@Override
+	public Offer updateOffer(Offer o) {
+String sql = "update offers set status = (?) where offer_id = (?);";
+		
+		try (Connection c = (ConnectionUse.getConnectionFromFile())){
+			PreparedStatement ps = c.prepareStatement(sql);
+			
+			ps.setString(1, o.getStatus());
+			ps.setInt(2, o.getOfferID());
+			ps.executeUpdate();
+//			ResultSet rs = ps.executeQuery(sql);
+//
+//			while(rs.next()) {
+//				((Offers) ps).setStatus(rs.getString("status"));
+//
+//			}
+		}catch(SQLException e) {
+			e.printStackTrace();
+		}
+		return o;
+	}
+
+	@Override
+	public Offer makeanOffer(Offer o) {
+		String sql = "insert into offers (gaming_id, amount, user_id) values (?,?,?) returning offer_id,gaming_id,amount,user_id;";
+		try(Connection c = (ConnectionUse.getConnectionFromFile())){
+			PreparedStatement ps = c.prepareStatement(sql);
+			ps.setInt(1, o.getGamingID());
+			ps.setInt(2, o.getAmount());
+			ps.setInt(3, o.getUserID());
+			ResultSet rs = ps.executeQuery();
+			if(rs.next()) {
+				o.setOfferID(rs.getInt("offer_id"));
+			
+			
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		return o;
+	}
+	@Override
+	public List<Offer> retrieveOffers() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+
+
+	
+}

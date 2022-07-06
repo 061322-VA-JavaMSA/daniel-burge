@@ -14,7 +14,17 @@ public class OfferService {
 	private static Logger log = LogManager.getLogger(OfferService.class);
 	
 	public List<Offer> getOffer() {
-		return od.retrieveOffers();
+		return od.retrieveOffer();
+	}
+	public Offer createOffer(Offer o) {
+		// logic to validate u
+		// if ok
+//		u = ud.createUser(u);
+		Offer offer = od.create(o);
+		log.info("Offer id: " + offer + " status was changed.");
+		return offer;
+		
+
 	}
 	public Offer ChangeOfferStatus(Offer o) {
 		return od.updateOffer(o);

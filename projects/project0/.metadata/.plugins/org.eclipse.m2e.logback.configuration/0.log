@@ -1173,3 +1173,55 @@
 2022-07-04 18:04:58,495 [Worker-37: Launching Driver] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
 2022-07-04 18:04:58,497 [Worker-37: Launching Driver] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2022-07-04 18:04:58,498 [Worker-37: Launching Driver] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-04 20:35:13,768 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-07-04 20:45:31,986 [Worker-7: Launching Driver] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-04 20:45:31,990 [Worker-7: Launching Driver] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-07-04 20:45:31,995 [Worker-7: Launching Driver] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-04 20:45:31,996 [Worker-7: Launching Driver] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-04 20:47:08,382 [Worker-21: Launching Driver] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-04 20:47:08,385 [Worker-21: Launching Driver] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-07-04 20:47:08,386 [Worker-21: Launching Driver] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-04 20:47:08,387 [Worker-21: Launching Driver] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-04 20:51:40,436 [Worker-1: Launching Driver] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-04 20:51:40,437 [Worker-1: Launching Driver] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-07-04 20:51:40,439 [Worker-1: Launching Driver] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-04 20:51:40,440 [Worker-1: Launching Driver] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-04 21:09:53,586 [Worker-1: Launching Driver] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-04 21:09:53,587 [Worker-1: Launching Driver] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-07-04 21:09:53,588 [Worker-1: Launching Driver] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-04 21:09:53,589 [Worker-1: Launching Driver] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-04 21:11:14,956 [Worker-12: Launching Driver] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-04 21:11:14,957 [Worker-12: Launching Driver] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-07-04 21:11:14,959 [Worker-12: Launching Driver] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-04 21:11:14,960 [Worker-12: Launching Driver] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-04 21:18:43,777 [Worker-8: Launching Driver] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-04 21:18:43,778 [Worker-8: Launching Driver] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-07-04 21:18:43,780 [Worker-8: Launching Driver] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-04 21:18:43,787 [Worker-8: Launching Driver] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-04 21:27:00,569 [Worker-8: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-04 21:27:00,571 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-07-04 21:27:00,572 [Worker-8: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-04 21:27:00,572 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-04 21:30:50,919 [Worker-23: Launching Driver] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-04 21:30:50,921 [Worker-23: Launching Driver] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-07-04 21:30:50,922 [Worker-23: Launching Driver] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-04 21:30:50,923 [Worker-23: Launching Driver] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-04 21:31:03,973 [Worker-27: Launching Driver] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-04 21:31:03,975 [Worker-27: Launching Driver] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-07-04 21:31:03,976 [Worker-27: Launching Driver] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-04 21:31:03,978 [Worker-27: Launching Driver] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-04 21:40:15,155 [Worker-23: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-04 21:40:15,156 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-07-04 21:40:15,158 [Worker-23: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-04 21:40:15,159 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-04 21:40:45,706 [Worker-26: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-04 21:40:45,707 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-07-04 21:40:45,708 [Worker-26: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-04 21:40:45,709 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-04 22:22:58,357 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-07-04 22:23:50,144 [Worker-20: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-04 22:23:50,148 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-07-04 22:23:50,151 [Worker-20: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-07-04 22:23:50,152 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-05 09:03:24,217 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-07-05 13:16:22,829 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

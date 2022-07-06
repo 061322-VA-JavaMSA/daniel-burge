@@ -6,7 +6,7 @@ import java.util.Scanner;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.revature.daos.StorePostgres;
+
 import com.revature.exceptions.LoginException;
 import com.revature.models.Offer;
 import com.revature.models.Store;
@@ -36,7 +36,7 @@ public class Driver {
 		ss = new StoreService();
 		 os = new OfferService();
 		
-		StorePostgres sp = new StorePostgres();
+	
 		//***** Code attempt at making a navigated page****
 		//boolean apex = true;
 		//while(apex == true) {
@@ -191,6 +191,21 @@ public class Driver {
 		o.setUserID(user_id);
 		os.MakeanOffer(o);
 		System.out.println("Offer has been created.");
+		List<Offer> offer = os.getOffer();
+		
+		for (Offer o1: offer) {
+			System.out.println(o1);
+		}
+		String status;
+		int offer_id;
+		System.out.println("Choose the id of the offer to change");
+		offer_id = scan.nextInt();
+		System.out.println("What is the status you are changing this offer to");
+		status = scan.nextLine();
+		o.setStatus(status);
+		o.setOfferID(offer_id);
+		os.createOffer(o);
+		
 		
 	}
 		

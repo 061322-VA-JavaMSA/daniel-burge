@@ -4,8 +4,10 @@ import java.util.List;
 
 import com.revature.models.Offer;
 
+
 public interface OfferDAO{
-	List<Offer> retrieveOffers();
+	Offer create(Offer o);
+	List <Offer> retrieveOffer();
 	public Offer updateOffer(Offer o);
 	public Offer makeanOffer(Offer o);
 
