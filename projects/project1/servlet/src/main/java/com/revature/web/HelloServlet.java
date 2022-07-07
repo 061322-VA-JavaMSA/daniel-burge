@@ -1,4 +1,4 @@
-package revature.com.web;
+package com.revature.web;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -19,9 +19,9 @@ public class HelloServlet extends HttpServlet {
 		// behavior to handle GET request
 		
 		// Object to write to HTTP response body
-//		PrintWriter pw = resp.getWriter();
-//		pw.write("<html><body><h1>This is in an h1</h1></body></html>");
-//		pw.close();
+	PrintWriter pw = resp.getWriter();
+		pw.write("<html><body><h1>This is in an h1</h1></body></html>");
+		pw.close();
 		
 		req.getRequestDispatcher("index.html").forward(req, resp);
 	}
