@@ -105,5 +105,4 @@ public class UserServlet extends HttpServlet {
 			res.sendError(400, "Unable to create new user.");
 			e.printStackTrace();
 		}
-	}
-}
+	}}

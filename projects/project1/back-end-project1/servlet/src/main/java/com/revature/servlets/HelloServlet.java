@@ -20,8 +20,8 @@ public class HelloServlet extends HttpServlet {
 		
 		// Object to write to HTTP response body
 	PrintWriter pw = resp.getWriter();
-	//	pw.write("<html><body><h1>This is in an h1</h1></body></html>");
-	//	pw.close();
+		pw.write("<html><body><h1>This is in an h1</h1></body></html>");
+		pw.close();
 		
 		req.getRequestDispatcher("index.html").forward(req, resp);
 	}

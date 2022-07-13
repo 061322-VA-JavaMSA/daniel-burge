@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE hibernate-configuration PUBLIC
     "-//Hibernate/Hibernate Configuration DTD//EN"
     "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
@@ -22,7 +22,7 @@
 		
 		
 		<mapping class="com.revature.models.User"></mapping>
-		<mapping class="com.revature.models.Task"></mapping>
+		<mapping class="com.revature.models.Role"></mapping>
     </session-factory>
 
 </hibernate-configuration>

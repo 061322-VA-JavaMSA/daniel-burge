@@ -25,17 +25,17 @@ public class User {
 	@Column( nullable = false)
 	private String password;
 	
-	@Column(name = "user_first_name", nullable = false) 
+	@Column(name = "first_name", nullable = false) 
 	private String firstName;
 	
-	@Column(name = "user_last_name", nullable = false) 
+	@Column(name = "last_name", nullable = false) 
 	private String lastName;
 	
 	@Column(unique=true, nullable=false)
 	private String email;
 	
 	@ManyToOne
-	@JoinColumn(name = "user_role_id")
+	@JoinColumn(name = "role_id")
 	private Role role;
 	
 	public User() {
