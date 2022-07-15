@@ -13,11 +13,11 @@ if (principalString) {
     // converts the JSON string back to a JS object and assigns it to principal
     principal = JSON.parse(principalString);
 
-    if (principal.role === 'ADMIN') {
-        createNavElement('Users', nav_left, './users.html', null);
+    if (principal.role === 'MANAGER') {
+        createNavElement('Employees', nav_left, './employees.html', null);
     }
 
-    createNavElement('Tasks', nav_left, './tasks.html', null);
+    createNavElement('Reimbursements', nav_left, './reimbursements.html', null);
 
     createNavElement('Logout', nav_right, null, logout);
 } else {

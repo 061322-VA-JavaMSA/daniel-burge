@@ -66,6 +66,7 @@ public class Reimbursement {
 		id = -1;
 		
 	}
+	
 	public void setId(int id) {
 		this.id = id;
 	}
@@ -143,4 +144,9 @@ public class Reimbursement {
 				+ reimbType + "]";
 	}
 
+	public int getId() {
+		// TODO Auto-generated method stub
+		return id;
+	}
+	
 }

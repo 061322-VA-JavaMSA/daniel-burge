@@ -1,8 +1,9 @@
 // if no users are logged in/ user logged in is not admin, redirects to homepage 
-if(!principal || principal.role !== 'ADMIN'){
+if(!principal || principal.role !== 'MANAGER'){
     window.location.href="./index.html";
+    
 }else{
-    getUsers();
+    getUsers(); ;
 }
 async function getUsers(){
 
@@ -30,12 +31,14 @@ function populateTable(data){
 
         tdId.innerHTML = user.id;
         tdUsername.innerHTML = user.username;
-        tdRole.innerHTML = user.role;
+        tdRole.innerHTML = user.role.role;
 
         tr.append(tdId);
         tr.append(tdUsername);
         tr.append(tdRole);
 
         tableBody.append(tr);
+        console.log(user);
     });
+
 }
