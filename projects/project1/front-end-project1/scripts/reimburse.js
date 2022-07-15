@@ -1,10 +1,10 @@
 
-  if(!principal || principal.role !== 'MANAGER'){
+  if(!principal || principal.role !== 'MANAGER')
     window.location.href="./reimbursements.html";
     
-}else{ getReimbursements();
+ getReimbursements();
    
-} 
+
 //async function approveStatus(){
     let id = document.getElementById('reimbursement.id').value;
     console.log(id)
